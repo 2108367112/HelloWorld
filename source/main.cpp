@@ -1,6 +1,7 @@
 #include <iostream>
-#include "hearder/Student.h"
-#include "hearder/PostStudent.h"
+#include "../hearder/Student.h"
+#include "../hearder/PostStudent.h"
+#include "Constants.h"
 
 using namespace std;
 
@@ -28,6 +29,11 @@ int main() {
     auto *student1 = new PostStudent();
     student1->girlFriendName();
     std::cout << sizeof(int) << std::endl;
+    std::cout << user::fileName << std::endl;
+    std::cout << user::address << std::endl;
+    std::cout << user::age << std::endl;
+    std::cout << user::getAge() << std::endl;
+    getUserInfor();
     return 0;
 }
 /**

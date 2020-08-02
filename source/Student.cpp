@@ -34,7 +34,7 @@ void Student::setName(string name) {
 
 void Student::girlFriendName() {
     cout << "gao zhong sheng" << endl;
-    cout << "a====" + fileName << endl;
+    cout << "a====" + user::fileName << endl;
 }
 
 int Student::count = 0;
