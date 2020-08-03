@@ -1,17 +1,27 @@
 #include <iostream>
 #include "../hearder/Student.h"
 #include "../hearder/PostStudent.h"
+<<<<<<< Updated upstream:source/main.cpp
 #include "Constants.h"
+=======
+>>>>>>> Stashed changes:main.cpp
 
 using namespace std;
 
 
-char id = 100;
+int id = 100;
+int *point = &id;
+
+int a = 600;
+int &aliaX = a;//引用变量赋值，只能是变量。不能是具体值。
+//C++中的字符串(是不是指针？？)
+const char *string2 = "hello world";
 
 int main() {
     //对象创建方式1：使用new 关键字创建对象。对象保持在堆空间。
     auto *student = new Student();
     Student::getMax();
+
     //对象 函数的调用
     string name = student->getName();
     cout << "name" + name << endl;
@@ -29,11 +39,19 @@ int main() {
     auto *student1 = new PostStudent();
     student1->girlFriendName();
     std::cout << sizeof(int) << std::endl;
+<<<<<<< Updated upstream:source/main.cpp
     std::cout << user::fileName << std::endl;
     std::cout << user::address << std::endl;
     std::cout << user::age << std::endl;
     std::cout << user::getAge() << std::endl;
     getUserInfor();
+=======
+    cout << *point << endl;
+    aliaX = 50;
+    cout << aliaX << endl;
+    cout << a << endl;
+    cout << string2 << endl;
+>>>>>>> Stashed changes:main.cpp
     return 0;
 }
 /**
