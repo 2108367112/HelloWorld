@@ -2,13 +2,9 @@
 // Created by Administrator on 2019/5/6.
 //
 
-<<<<<<< Updated upstream
-=======
 #include "../hearder/Constants.h"
 #include <string>
->>>>>>> Stashed changes
 #include <iostream>
-#include "Constants.h"
 
 using namespace std;
 
