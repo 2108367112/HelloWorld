@@ -1,10 +1,9 @@
 #include <iostream>
 #include "../hearder/Student.h"
 #include "../hearder/PostStudent.h"
-<<<<<<< Updated upstream:source/main.cpp
-#include "Constants.h"
-=======
->>>>>>> Stashed changes:main.cpp
+#include "../hearder/Constants.h"
+#include "../hearder/Utils.h"
+
 
 using namespace std;
 
@@ -17,7 +16,21 @@ int &aliaX = a;//引用变量赋值，只能是变量。不能是具体值。
 //C++中的字符串(是不是指针？？)
 const char *string2 = "hello world";
 
+//结构体
+struct MiddleStudent {
+    int age;
+    char *name;
+    string address;
+    float score;
+
+};
+
 int main() {
+    MiddleStudent middleStudent;
+    middleStudent.name = "中学生";
+    middleStudent.age = 18;
+    middleStudent.address = "深圳宝安区";
+    middleStudent.score = 620;
     //对象创建方式1：使用new 关键字创建对象。对象保持在堆空间。
     auto *student = new Student();
     Student::getMax();
@@ -39,19 +52,21 @@ int main() {
     auto *student1 = new PostStudent();
     student1->girlFriendName();
     std::cout << sizeof(int) << std::endl;
-<<<<<<< Updated upstream:source/main.cpp
     std::cout << user::fileName << std::endl;
     std::cout << user::address << std::endl;
     std::cout << user::age << std::endl;
     std::cout << user::getAge() << std::endl;
     getUserInfor();
-=======
     cout << *point << endl;
     aliaX = 50;
     cout << aliaX << endl;
     cout << a << endl;
     cout << string2 << endl;
->>>>>>> Stashed changes:main.cpp
+    cout << "linboqiang 222222" << endl;
+    Student student2;//C++中，声明一个对象，会立即创建一个对象
+    string string1 = student2.getName();
+    cout << string1 << endl;
+    cout << getFileName() << endl;
     return 0;
 }
 /**
