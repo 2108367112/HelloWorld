@@ -15,14 +15,16 @@ int a = 600;
 int &aliaX = a;//引用变量赋值，只能是变量。不能是具体值。
 //C++中的字符串(是不是指针？？)
 const char *string2 = "hello world";
-const char *state = "中学生";
+//用字符数组，表示字符串。
+char middleName[] = "林博强";
+char *pchar;//这里是否为一个指针变量。
 
 
 char q[43] = "afdagfadhgasfdhytfg";
 //结构体
 struct MiddleStudent {
     int age;
-    char *name;
+    char *name;//这里到底是表示，指针变量，还是字符串？？？
     string address;
     float score;
 
@@ -40,7 +42,7 @@ void swap2(int *p1, int *p2) {
 
 int main() {
     MiddleStudent middleStudent;
-    middleStudent.name = state;
+    middleStudent.name = middleName;
     middleStudent.age = 18;
     middleStudent.address = "深圳宝安区";
     middleStudent.score = 620;
@@ -48,6 +50,7 @@ int main() {
     auto *student = new Student();
     Student::getMax();
 
+    cout << "中学生姓名：" << middleStudent.name << endl;
     //对象 函数的调用
     string name = student->getName();
     cout << "name" + name << endl;
