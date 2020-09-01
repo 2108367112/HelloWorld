@@ -20,7 +20,7 @@ Student::Student(int id, string name) {
     this->name = name;
 }
 
-void Student::getMax() {
+void Student::getMax(Sun &) {
     cout << "11111" << endl;
 }
 

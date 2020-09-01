@@ -6,6 +6,7 @@
 #define HELLOWORLD_STUDENT_H
 
 #include <string>
+#include "Sun.h"
 
 using namespace std;
 
@@ -31,7 +32,7 @@ public:
     static int count;
 
     //声明 类的静态成员函数 。在实现的时候，可以不用写static 了。但最好写上。
-    static void getMax();
+    static void getMax(Sun &);
 
     //类的成员函数——>属于类的，整个程序只有一份函数。
     string getName();

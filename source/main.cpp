@@ -3,6 +3,7 @@
 #include "../hearder/PostStudent.h"
 #include "../hearder/Constants.h"
 #include "../hearder/Utils.h"
+#include "../hearder/Sun.h"
 
 
 using namespace std;
@@ -48,7 +49,8 @@ int main() {
     middleStudent.score = 620;
     //对象创建方式1：使用new 关键字创建对象。对象保持在堆空间。
     auto *student = new Student();
-    Student::getMax();
+    Sun sun;
+    Student::getMax(sun);
 
     cout << "中学生姓名：" << middleStudent.name << endl;
     //对象 函数的调用
@@ -64,7 +66,7 @@ int main() {
     int count = Student::count;
     cout << count << endl;
     //类的静态函数
-    Student::getMax();
+    Student::getMax(sun);
     auto *student1 = new PostStudent();
     student1->girlFriendName();
     std::cout << sizeof(int) << std::endl;
@@ -88,6 +90,8 @@ int main() {
     cout << *p1 << endl;
     cout << *p2 << endl;
     cout << "数据的长度= " << sizeof(int) << endl;
+
+    cout << "儿子的钱==\n" << sun.getMoney() << endl;
     return 0;
 }
 /**

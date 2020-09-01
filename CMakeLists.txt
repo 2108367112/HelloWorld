@@ -10,4 +10,4 @@ add_executable(HelloWorld
         source/PostStudent.cpp
         hearder/PostStudent.h
         hearder/Constants.h
-        source/Constants.cpp hearder/Utils.h source/Utils.cpp)
+        source/Constants.cpp hearder/Utils.h source/Utils.cpp source/Parent.cpp hearder/Parent.h source/Sun.cpp hearder/Sun.h source/Teacher.cpp hearder/Teacher.h)
