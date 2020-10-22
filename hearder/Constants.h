@@ -13,6 +13,8 @@ using namespace std;
 //1、声明一个全局变量，通常它的定义者，是在同名的cpp 文件。2、使用者只需要include 当前的头文件即可使用。
 //2、不可以在头文件中直接初始化变量。
 
+//声明来给别人用？？？假如写在头文件.h中，但是不加 extern 别人能用吗？？？
+
 //在头文件中，使用命名空间
 namespace user {
     extern string fileName;

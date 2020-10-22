@@ -38,6 +38,30 @@ void Student::girlFriendName() {
 }
 
 int Student::count = 0;
+
+int Student::getIdNumber() const {
+    return idNumber;
+}
+
+void Student::setIdNumber(int idNumber) {
+    Student::idNumber = idNumber;
+}
+
+int Student::getAge() const {
+    return age;
+}
+
+void Student::setAge(int age) {
+    Student::age = age;
+}
+
+float Student::getHeight() const {
+    return height;
+}
+
+void Student::setHeight(float height) {
+    Student::height = height;
+}
 /**
  * 1、构造方法没有返回值。与 Java 构造方法 一样。
  * 2、函数的实现，必须带 返回值 声明。 与Java 的一样。

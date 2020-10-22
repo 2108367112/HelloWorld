@@ -20,7 +20,6 @@ protected:
 public:
     int getMoney() override {
         int count = Parent::getMoney();
-        cout << "¸¸Ç×µÄÇ®+¶ù×ÓµÄÇ®=" << count << endl;
         return 1015;
     }
 

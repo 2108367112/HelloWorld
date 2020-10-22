@@ -7,6 +7,8 @@
 
 using namespace std;
 
+int value = 50;
+
 string getFileName() {
     std::cout << "File Path is:" << endl;
     return "sdcard";
