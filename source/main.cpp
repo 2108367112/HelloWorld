@@ -70,16 +70,27 @@ void structUse() {
     cout << "中学生姓名：" << middleStudent.name << endl;
 }
 
-namespace A
-{
+namespace A {
     int a = 100;
     namespace B            //嵌套一个命名空间B
     {
-        int a =20;
+        int a = 20;
     }
 }
 
 int a = 200;//定义一个全局变量
+
+//信号测试函数
+
+void signalHandler(int signum) {
+    cout << "Interrupt signal (" << signum << ") received.\n";
+
+    // 清理并关闭
+    // 终止程序
+
+    exit(signum);
+
+}
 
 int main() {
     //对象使用测试
@@ -154,14 +165,21 @@ int main() {
 //    cout << getFileName() << endl;
 //    ofstream outfile;
 //    outfile.open("afile.dat");
-    cout <<"A::a ="<< A::a << endl;
-    cout <<"A::B::a ="<<A::B::a << endl;
-    cout <<"a ="<<a << endl;
-    cout <<"::a ="<<::a << endl;
-
-    int a = 30;
-    cout <<"a ="<<a << endl;
-    cout <<"::a ="<<::a << endl;
+//    cout <<"A::a ="<< A::a << endl;
+//    cout <<"A::B::a ="<<A::B::a << endl;
+//    cout <<"a ="<<a << endl;
+//    cout <<"::a ="<<::a << endl;
+//
+//    int a = 30;
+//    cout <<"a ="<<a << endl;
+//    cout <<"::a ="<<::a << endl;
+    // 注册信号 SIGINT 和信号处理程序
+//    signal(SIGINT,signalHandler);
+//    while(1){
+//        cout << "Going to sleep...." << endl;
+//        sleep(1);
+//    }
+    printf("11");
     return 0;
 }
 

@@ -7,6 +7,9 @@
 
 #include "istream"
 #include <iostream>
+#include <csignal>
+//#include <zconf.h>
+#include <unistd.h>
 
 using namespace std;
 
