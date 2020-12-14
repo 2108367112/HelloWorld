@@ -13,6 +13,12 @@
 
 using namespace std;
 
+extern int age;
+
+//常量的声明和定义（定义的另一种称呼是：初始化）
+
+const int Months=12;
+
 
 string getFileName();
 

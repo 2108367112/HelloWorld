@@ -8,6 +8,6 @@
 using namespace std;
 
 int Parent::getMoney() {
-    cout << "父类调用" << endl;
+    cout << "鐖剁被璋冪敤" << endl;
     return 1000;
 }
