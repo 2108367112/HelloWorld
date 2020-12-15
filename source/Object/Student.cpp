@@ -2,10 +2,10 @@
 // Created by Administrator on 2019/4/28.
 //
 
-#include "../hearder/Student.h"
+#include "../../hearder/Student.h"
 #include <iostream>
-#include "../hearder/Constants.h"
-#include "../hearder/Utils.h"
+
+#include "../../hearder/Constants.h"
 
 using namespace std;
 
@@ -23,7 +23,6 @@ Student::Student(int id, string name) {
 
 void Student::getMax(Sun &) {
     cout << "11111" << endl;
-    cout << Months << endl;
 }
 
 string Student::getName() {

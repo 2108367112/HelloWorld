@@ -3,13 +3,19 @@ project(HelloWorld)
 
 set(CMAKE_CXX_STANDARD 14)
 
+include_directories(hearder/)
+
 add_executable(HelloWorld
         source/main.cpp
-        source/Student.cpp
-        source/PostStudent.cpp
-        source/Constants.cpp
-        source/Utils.cpp
-        source/Parent.cpp
-        source/Sun.cpp )
+        source/common/Constants.cpp
+        source/common/Utils.cpp
+        source/common/PointTest.cpp
+        source/Object/PostStudent.cpp
+        source/Object/Student.cpp
+        source/Object/Parent.cpp
+        source/Object/Sun.cpp
+        source/Object/Teacher.cpp
+        )
 
-include_directories(hearder/)
+
+
