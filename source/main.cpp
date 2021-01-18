@@ -18,12 +18,12 @@ int id = 100;
 int *point = &id;
 
 int am = 600;
-int &aliaX = am;//引用变量赋�?�，只能是变量�?�不能是具体值�??
-//C++中的字符�?(是不是指针？�?)
+int &aliaX = am;//寮曠敤鍙橀噺璧嬪?硷紝鍙兘鏄彉閲忋?備笉鑳芥槸鍏蜂綋鍊笺??
+//C++涓殑瀛楃涓?(鏄笉鏄寚閽堬紵锛?)
 const char *string2 = "hello world";
-//用字符数组，表示字符串�??
-char middleName[] = "林博�?";
-char *pchar;//这里是否为一个指针变量�??
+//鐢ㄥ瓧绗︽暟缁勶紝琛ㄧず瀛楃涓层??
+char middleName[] = "鏋楀崥寮?";
+char *pchar;//杩欓噷鏄惁涓轰竴涓寚閽堝彉閲忋??
 
 
 char q[43] = "afdagfadhgasfdhytfg";
@@ -32,7 +32,7 @@ int num3 = 66;
 
 void obejectUse(Student *&student, Sun &sun);
 
-//传�?�指�?
+//浼犻?掓寚閽?
 void swap2(int *p1, int *p2) {
     int temp = *p1;
     *p1 = *p2;
@@ -47,7 +47,7 @@ void printly() {
     cout << a << endl;
 }
 
-//类的使用测试
+//绫荤殑浣跨敤娴嬭瘯
 Student *objectUse(Student *student) {
     student = new Student();
     student->setName("linboqiang");
@@ -57,7 +57,7 @@ Student *objectUse(Student *student) {
     return student;
 }
 
-//结构体使用测�?
+//缁撴瀯浣撲娇鐢ㄦ祴璇?
 void structUse() {
     MiddleStudent middleStudent;
     middleStudent.name = middleName;
@@ -66,12 +66,12 @@ void structUse() {
     middleStudent.score = 620;
     middleStudent.score = 111;
     middleStudent.getMax();
-    cout << "中学生姓名：" << middleStudent.name << endl;
+    cout << "涓鐢熷鍚嶏細" << middleStudent.name << endl;
 }
 
 namespace A {
     int a = 100;
-    namespace B            //嵌套�?个命名空间B
+    namespace B            //宓屽涓?涓懡鍚嶇┖闂碆
     {
         int a = 20;
     }

@@ -7,9 +7,9 @@ include_directories(hearder/)
 
 add_executable(HelloWorld
         source/main.cpp
-        source/cAndCpp/Constants.cpp
-        source/cAndCpp/Utils.cpp
-        source/cAndCpp/PointTest.cpp
+        source/cLanguage/Constants.cpp
+        source/cLanguage/Utils.cpp
+        source/cLanguage/PointTest.cpp
         source/FaceObject/PostStudent.cpp
         source/FaceObject/Student.cpp
         source/FaceObject/Parent.cpp
