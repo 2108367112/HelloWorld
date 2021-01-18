@@ -10,6 +10,8 @@
 #include <exception>
 #include "stdio.h"
 #include "../hearder/PointTest.h"
+#include <cstdio>
+#include <Dog.h>
 
 using namespace std;
 
@@ -24,6 +26,7 @@ const char *string2 = "hello world";
 //鐢ㄥ瓧绗︽暟缁勶紝琛ㄧず瀛楃涓层??
 char middleName[] = "鏋楀崥寮?";
 char *pchar;//杩欓噷鏄惁涓轰竴涓寚閽堝彉閲忋??
+
 
 
 char q[43] = "afdagfadhgasfdhytfg";
@@ -47,9 +50,9 @@ void printly() {
     cout << a << endl;
 }
 
-//绫荤殑浣跨敤娴嬭瘯
+
 Student *objectUse(Student *student) {
-    student = new Student();
+    student = new PostStudent();
     student->setName("linboqiang");
     student->setAge(36);
     student->setIdNumber(123456);
@@ -57,7 +60,7 @@ Student *objectUse(Student *student) {
     return student;
 }
 
-//缁撴瀯浣撲娇鐢ㄦ祴璇?
+
 void structUse() {
     MiddleStudent middleStudent;
     middleStudent.name = middleName;
@@ -66,12 +69,14 @@ void structUse() {
     middleStudent.score = 620;
     middleStudent.score = 111;
     middleStudent.getMax();
-    cout << "涓鐢熷鍚嶏細" << middleStudent.name << endl;
+
+    cout << "student name is : " << middleStudent.name << endl;
 }
 
 namespace A {
     int a = 100;
-    namespace B            //宓屽涓?涓懡鍚嶇┖闂碆
+
+    namespace B            //命名空间可以嵌套
     {
         int a = 20;
     }
@@ -88,6 +93,27 @@ void signalHandler(int signum) {
 
 int main() {
     charStringTest();
+    int a = 111;
+    int &a1 = a;
+    cout << &a << " " << &a1 << "hello" << 100 << 'A' << endl;
+    PostStudent student;
+    Student &mm = student;
+    char name[10];
+//    student.girlFriendName();
+    mm.girlFriendName();
+    mm.name;
+    mm.getScore();
+    printf("printf funtion use : %s\n", "linboqiang ============ ");
+    cout << Utils::Months << endl;
+    Utils::getValue();
+//    scanf("%s", name);
+    cout << name << endl;
+    auto *student1 = new PostStudent();
+    student1->getScore();
+    student1->name = "linboqiang";
+    cout << student1->name << endl;
+    Dog dog;
+    dog.getName();
     return 0;
 }
 

@@ -41,7 +41,7 @@ void Student::girlFriendName() {
 int Student::count = 0;
 
 int Student::getIdNumber() const {
-    return idNumber;
+    return this->idNumber;
 }
 
 void Student::setIdNumber(int idNumber) {

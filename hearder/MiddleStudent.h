@@ -18,6 +18,7 @@ struct MiddleStudent {
 
     int getMax() {
         cout << "测试专用" << endl;
+        return 0;
     }
 };
 

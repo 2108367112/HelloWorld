@@ -18,6 +18,7 @@ public:
     float height;
     //类的成员变量——>属于对象的
     string name = "wumingshi";
+
     //构造函数——>用于创建对象
     Student();
 
@@ -51,8 +52,19 @@ public:
     void setName(std::string name);
 
     //虚函数——用于多态。表示：子类可以重写该方法。但子类的头文件也要声明该函数，不用带 virtual 关键字了。
-    virtual void girlFriendName() ;
+    virtual void girlFriendName();
+
+    //纯虚函数
+    virtual void girlFriendName(string name) = 0;
+
     int idd;
+
+    //在类的内部定义实现，属于内联函数
+    int getScore() {
+        cout << "get student score : 90 fen   " << endl;
+        cout<<typeid(this).name()<<endl;
+        return 90;
+    }
 };
 
 #endif //HELLOWORLD_STUDENT_H

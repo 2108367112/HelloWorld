@@ -16,7 +16,10 @@ class PostStudent : public Student {
 public:
     string topic;
 
-    void girlFriendName();
+    virtual void girlFriendName();
+    virtual void girlFriendName(string name){
+
+    };
 
 protected:
     string girlFrend;

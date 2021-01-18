@@ -14,8 +14,9 @@ add_executable(HelloWorld
         source/FaceObject/Student.cpp
         source/FaceObject/Parent.cpp
         source/FaceObject/Sun.cpp
+        source/FaceObject/Dog.cpp
         source/FaceObject/Teacher.cpp
-        )
+        source/cLanguage/namespaceTest.cpp)
 
 
 
